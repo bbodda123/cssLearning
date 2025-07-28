@@ -1,0 +1,133 @@
+
+:root {
+  --main-color: #FFFBF3;
+  --font-family-base: "Segoe UI", Tahoma, Verdana, sans-serif;
+  --font-style:'Winky Rough' ,sans-serif;
+  --dark-color:#000000;
+  --button-color:#FFA800;
+}
+/* Main Standard Style For All  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--main-color);
+  color: var(--dark-color);
+}
+button{
+    background-color: var(--button-color);
+}
+.bigMargin{
+    margin: 200px 0 ;
+}
+.fontAwesome{
+    font-family: var(--font-style);
+}
+
+.left-section-coursel p:first-child{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 0.75;
+}
+.left-section-coursel button:hover{
+    background-color: #dfa633;
+}
+/* Cat On the Right Side */
+.image{
+    position: relative;
+}
+.image img:first-child{
+    position: absolute;
+    z-index: 3;
+    width: 400px;
+    height: auto;
+    top: -150px;
+    left: 0px;
+}
+.image img:nth-child(2){
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    height: auto;
+    top: -250px;
+    left: -100px;
+}
+
+.middleSection p{
+    margin: 0 auto 150px auto;
+    word-spacing: 0;
+    font-size: 40px;
+    width: 55%;
+    font-weight: 700;
+    
+}
+.middleSection img:first-child{
+    width: 100px;
+    height: auto;
+}
+.postioningOne{
+    position: absolute;
+    z-index: -2;
+    left: 20%;
+    top: -70px;
+    width: 600px;
+    height: auto;
+}
+.postioningTwo{
+    position: absolute;
+    left: 320px;
+    top: 120px;
+    width: 400px;
+    height: auto;
+}
+.postioningThree{
+    position: absolute;
+    left: 30%;
+    z-index: -1;
+    top: 90px;
+    width: 380px;
+    height: auto;
+}
+.quote{
+    font-size: 29px;
+    font-weight: 400;
+}
+.info img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.infoName span{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 0.5;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #FFA800;
+    position: relative;
+
+}
+footer img{
+position: absolute;
+width: 600px;
+height: auto;
+left: 23%;
+top:-200px;
+}
+footer button{
+    background-color: #F9E1B2;
+    align-self: center;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+}
+footer button:hover{
+    background-color: #eddfc1;
+}
