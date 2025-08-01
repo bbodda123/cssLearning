@@ -1,0 +1,95 @@
+/* ===== CSS Variables ===== */
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /* Colors */
+  --color-text: #333;
+  --color-input: #E9E3DF;
+  --color-bg: #f9f9f9;
+  --color-primary: #347928;
+  --color-primary-dark: rgb(44, 102, 8);
+  --color-link: var(--color-text);
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  /* Border Radius */
+  --radius: 4px;
+}
+
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+  height: 100%;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  background-color: var(--color-bg);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+  padding-left: var(--spacing-lg);
+}
+
+/* Full length */
+
+.fullLength{
+    height: 100vh;
+}
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Forms ===== */
+input, button, select, textarea {
+  font: inherit;
+}
+
+/* ===== Buttons ===== */
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--color-primary);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius);
+}
+button:hover {
+  background: var(--color-primary-dark);
+}
+.textMain{
+    color: var(--color-link);
+}
+form {
+    background-color: var(--color-bg);
+}
+form input{
+    background-color: var(--color-input);
+}
